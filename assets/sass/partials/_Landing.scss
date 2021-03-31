@@ -1,0 +1,118 @@
+.hero {
+  background: $gray-dark;
+  color: #fff;
+  min-height: 100vh;
+  background-image: url(~/assets/img/pattern1.png);
+  background-repeat: no-repeat;
+  background-position: right -300px bottom;
+  position: relative;
+  padding-bottom: $separation;
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+
+    &--logo {
+      img {
+        width: 30rem;
+      }
+    }
+
+    &--menu {
+      ul {
+        display: flex;
+        gap: 2rem;
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $white-ultra;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 3rem;
+
+    @media screen and (min-width: 1025px) {
+      margin-top: 0;
+      grid-template-columns: 1fr 1fr;
+      min-height: calc(100vh - 7rem);
+      display: grid;
+      gap: 3rem;
+      align-items: center;
+      transform: translateY(-5rem);
+    }
+
+    &--text {
+      color: $white;
+      text-align: center;
+
+      @media screen and (min-width: 1025px) {
+        text-align: left;
+      }
+
+      h1 {
+        color: $white-ultra;
+        span {
+          color: $blue;
+        }
+        font-size: 50px;
+      }
+      h3 {
+        margin: 3rem 0;
+        font-size: 25px;
+      }
+
+      p {
+      }
+
+      .btns {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media screen and (min-width: 1025px) {
+          flex-direction: row;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        color: $white;
+        border: 2px solid $white;
+        box-shadow: $shadow;
+
+        &:hover {
+          background: rgba($color: #fff, $alpha: 0.2);
+        }
+      }
+
+      .btn-blue {
+        color: $blue;
+        border: 2px solid $blue;
+
+        &:hover {
+          color: $white;
+          background: rgba($color: $blue, $alpha: 0.2);
+        }
+      }
+    }
+
+    &--img {
+      display: none;
+
+      @media screen and (min-width: 1025px) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$white: #e0e0e0;
+$white-ultra: #fff;
+$gray-dark: #1f1f1f;
+$gray-middle: #292929;
+$gray-light: #ccc;
+$blue: #01c0ff;
+$separation: 10rem;
+$separation-title: 4rem;
+$shadow: 2px 5px 10px
+  rgba(
+    $color: #000000,
+    $alpha: 0.4,
+  );
+
+@import 'partials/reset';
+@import 'partials/Landing';
+@import 'partials/Video';
+@import 'partials/Benefits';
+@import 'partials/Future';

@@ -1,0 +1,61 @@
+.benefits {
+  background: $gray-dark;
+  color: $white;
+  background-image: url(~/assets/img/pattern1.png);
+  background-repeat: no-repeat;
+  background-position: left -300px bottom;
+  .container {
+    padding: $separation 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $separation-title;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 1rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      background: $gray-middle;
+      border-radius: 1rem;
+      box-shadow: $shadow;
+      padding: 5rem;
+
+      img {
+        width: 10rem;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: $gray-light;
+      }
+    }
+  }
+}

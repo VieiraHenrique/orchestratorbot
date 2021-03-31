@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Oxygen';
+  src: local('Oxygen'), url(~assets/fonts/AmazonEmber_Rg.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Amazon Ember';
+}
